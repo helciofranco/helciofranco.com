@@ -1,4 +1,6 @@
 import { getCssText } from '@libs/stitches';
+import '@libs/stitches/global';
+
 import Document, {
   DocumentContext,
   DocumentInitialProps,
