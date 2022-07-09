@@ -11,7 +11,7 @@ const globalStyles = globalCss({
     margin: '0', // Remove the margin in all browsers.
     padding: '0', // Remove the padding in all browsers.
     WebkitFontSmoothing: 'antialiased',
-    background: '$background',
+    backgroundColor: '$backgroundPrimary',
   },
 });
 
