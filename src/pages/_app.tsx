@@ -1,14 +1,14 @@
 import type { AppProps } from 'next/app';
 
-import Default from '@layouts/Default';
+import Base from '@layouts/Base';
 
 import '@libs/stitches/font-faces.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Default>
+    <Base>
       <Component {...pageProps} />
-    </Default>
+    </Base>
   );
 }
 

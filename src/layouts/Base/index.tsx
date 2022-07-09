@@ -1,7 +1,7 @@
 import { Props } from './types';
 
-const Default = ({ children }: Props) => {
+const Base = ({ children }: Props) => {
   return <div>{children}</div>;
 };
 
-export default Default;
+export default Base;
