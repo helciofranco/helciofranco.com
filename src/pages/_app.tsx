@@ -1,4 +1,3 @@
-import '@libs/stitches/global';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
