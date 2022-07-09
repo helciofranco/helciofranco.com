@@ -7,7 +7,9 @@ import Head from 'next/head';
 
 import Main from '@blog/screens/Main';
 
-import { Params } from './types';
+type Params = {
+  slug: string;
+};
 
 const Post = ({ slug }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
