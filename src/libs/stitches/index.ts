@@ -15,8 +15,25 @@ export const {
       gray400: '#FFF',
       gray500: 'lightgray',
     },
+    space: {
+      none: 0,
+      sm: '2px',
+      md: '4px',
+      lg: '8px',
+      xl: '12px',
+    },
     fonts: {
       body: 'Biotif, sans-serif',
+    },
+    fontSizes: {
+      sm: '12px',
+      md: '14px',
+      lg: '16px',
+    },
+    fontWeights: {
+      normal: 'normal',
+      medium: 500,
+      bold: 'bold',
     },
   },
   media: {
