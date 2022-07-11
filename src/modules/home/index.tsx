@@ -1,4 +1,5 @@
 import Box from '@components/Box';
+import Card from '@components/Card';
 import Text from '@components/Text';
 
 const Home = () => {
@@ -22,6 +23,11 @@ const Home = () => {
       <Text color="secondary" variant="h6" serif>
         The quick brown fox jumps over the lazy dog.
       </Text>
+
+      <Card>
+        <Text>You will learn</Text>
+        <Text>List here.</Text>
+      </Card>
     </Box>
   );
 };

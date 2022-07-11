@@ -5,6 +5,7 @@ import fonts from './fonts';
 import fontSizes from './fontSizes';
 import fontWeights from './fontWeights';
 import lineHeights from './lineHeights';
+import radii from './radii';
 import space from './space';
 
 export const {
@@ -23,6 +24,7 @@ export const {
     fontSizes,
     fontWeights,
     lineHeights,
+    radii,
     space,
   },
   media: {
