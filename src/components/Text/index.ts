@@ -18,39 +18,32 @@ const Text = styled('p', {
     // Font-size
     variant: {
       h1: {
-        fontSize: '$h1',
-        lineHeight: '$h1',
-        fontWeight: '$regular',
+        fontSize: '$7xl',
+        lineHeight: '$7xl',
       },
       h2: {
-        fontSize: '$h2',
-        lineHeight: '$h2',
-        fontWeight: '$regular',
+        fontSize: '$6xl',
+        lineHeight: '$6xl',
       },
       h3: {
-        fontSize: '$h3',
-        lineHeight: '$h3',
-        fontWeight: '$regular',
+        fontSize: '$5xl',
+        lineHeight: '$5xl',
       },
       h4: {
-        fontSize: '$h4',
-        lineHeight: '$h4',
-        fontWeight: '$regular',
+        fontSize: '$4xl',
+        lineHeight: '$4xl',
       },
       h5: {
-        fontSize: '$h5',
-        lineHeight: '$h5',
-        fontWeight: '$regular',
+        fontSize: '$3xl',
+        lineHeight: '$3xl',
       },
       h6: {
-        fontSize: '$h6',
-        lineHeight: '$h6',
-        fontWeight: '$medium',
+        fontSize: '$2xl',
+        lineHeight: '$2xl',
       },
       body: {
-        fontSize: '$body',
-        lineHeight: '$body',
-        fontWeight: '$regular',
+        fontSize: '$base',
+        lineHeight: '$base',
       },
     },
     // Serif

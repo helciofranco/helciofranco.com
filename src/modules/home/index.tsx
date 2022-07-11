@@ -24,8 +24,13 @@ const Home = () => {
         The quick brown fox jumps over the lazy dog.
       </Text>
 
-      <Card>
-        <Text>You will learn</Text>
+      <Card css={{ marginTop: '$space6' }}>
+        <Text
+          variant="h6"
+          css={{ marginBottom: '$space6', fontWeight: '$bold' }}
+        >
+          You will learn
+        </Text>
         <Text>List here.</Text>
       </Card>
     </Box>
