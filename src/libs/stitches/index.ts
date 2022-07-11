@@ -12,7 +12,12 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      backgroundPrimary: '#08070b',
+      // backgrounds
+      backgroundPrimary: '#1f2028',
+
+      // text
+      textPrimary: '#fff',
+      textSecondary: '#a9adc1',
     },
     space: {
       none: 0,
@@ -25,14 +30,27 @@ export const {
       body: 'Biotif, sans-serif',
     },
     fontSizes: {
-      sm: '12px',
-      md: '14px',
-      lg: '16px',
+      h1: '6rem',
+      h2: '3.75rem',
+      h3: '3rem',
+      h4: '2.125rem',
+      h5: '1.5rem',
+      h6: '1.25rem',
+      body: '1rem',
     },
     fontWeights: {
       normal: 'normal',
       medium: 500,
       bold: 'bold',
+    },
+    lineHeights: {
+      h1: '1.167',
+      h2: '1.2',
+      h3: '1.167',
+      h4: '1.235',
+      h5: '1.334',
+      h6: '1.6',
+      body: '1.5',
     },
   },
   media: {
