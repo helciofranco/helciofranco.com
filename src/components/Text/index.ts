@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react';
+import { styled } from '@libs/stitches';
 
 const Text = styled('p', {
   margin: '$none',
