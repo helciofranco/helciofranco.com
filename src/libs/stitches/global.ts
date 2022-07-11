@@ -17,6 +17,9 @@ const globalStyles = globalCss({
     fontSize: '1rem',
     backgroundColor: '$backgroundPrimary',
   },
+  code: {
+    fontFamily: '$serif',
+  },
 });
 
 globalStyles();

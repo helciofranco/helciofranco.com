@@ -1,5 +1,6 @@
 import Box from '@components/Box';
 import Card from '@components/Card';
+import Code from '@components/Code';
 import Text from '@components/Text';
 
 const Home = () => {
@@ -17,11 +18,17 @@ const Home = () => {
         <Text color="highlight" as="span">
           TypeScript
         </Text>{' '}
-        in just 4 minutes
+        in just 4 minutes <Code>if</Code> and <Code>{'&&'}</Code>
+      </Text>
+
+      <Text>
+        Let’s say you have a <Code>PackingList</Code> component rendering
+        several Items, which can be marked as packed or not:
       </Text>
 
       <Text color="secondary" variant="h6" serif>
-        The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog. <Code>if</Code> and{' '}
+        <Code>{'&&'}</Code>
       </Text>
 
       <Card css={{ marginTop: '$space6' }}>
@@ -29,9 +36,17 @@ const Home = () => {
           variant="h6"
           css={{ marginBottom: '$space6', fontWeight: '$bold' }}
         >
-          You will learn
+          You will learn <Code>if</Code> and <Code>{'&&'}</Code>
         </Text>
-        <Text>List here.</Text>
+
+        <ul>
+          <li>How to create and nest components</li>
+          <li>How to add markup and styles</li>
+          <li>How to display data</li>
+          <li>How to render conditions and lists</li>
+          <li>How to respond to events and update the screen</li>
+          <li>How to share data between components</li>
+        </ul>
       </Card>
     </Box>
   );

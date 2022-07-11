@@ -1,5 +1,6 @@
 const space = {
   none: 0,
+  one: '1px', // 1px
   space1: '0.125rem', // 2px
   space2: '0.25rem', // 4px
   space3: '0.375rem', // 6px
