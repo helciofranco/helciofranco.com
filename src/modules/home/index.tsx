@@ -11,9 +11,11 @@ const Home = () => {
       <Text variant="h3">h3. Headline</Text>
       <Text variant="h4">h4. Headline</Text>
       <Text variant="h5">h5. Headline</Text>
-      <Text variant="h6">h6. Headline</Text>
+      <Text variant="h6" css={{ marginBottom: '$space10' }}>
+        h6. Headline
+      </Text>
 
-      <Text color="secondary">
+      <Text color="secondary" css={{ marginBottom: '$space10' }}>
         Everything you need to learn{' '}
         <Text color="highlight" as="span">
           TypeScript
@@ -21,12 +23,17 @@ const Home = () => {
         in just 4 minutes <Code>if</Code> and <Code>{'&&'}</Code>
       </Text>
 
-      <Text>
+      <Text css={{ marginBottom: '$space10' }}>
         Let’s say you have a <Code>PackingList</Code> component rendering
         several Items, which can be marked as packed or not:
       </Text>
 
-      <Text color="secondary" variant="h6" serif>
+      <Text
+        color="secondary"
+        variant="h6"
+        serif
+        css={{ marginBottom: '$space10' }}
+      >
         The quick brown fox jumps over the lazy dog. <Code>if</Code> and{' '}
         <Code>{'&&'}</Code>
       </Text>
