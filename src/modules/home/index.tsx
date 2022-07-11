@@ -10,7 +10,13 @@ const Home = () => {
       <Text variant="h4">h4. Headline</Text>
       <Text variant="h5">h5. Headline</Text>
       <Text variant="h6">h6. Headline</Text>
-      <Text color="secondary">Body text</Text>
+      <Text color="secondary">
+        Everything you need to learn{' '}
+        <Text color="highlight" as="span">
+          TypeScript
+        </Text>{' '}
+        in just 4 minutes
+      </Text>
     </Box>
   );
 };

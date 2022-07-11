@@ -18,6 +18,7 @@ export const {
       // text
       textPrimary: '#fff',
       textSecondary: '#a9adc1',
+      textHighlight: '#36a3ff',
     },
     space: {
       none: 0,
