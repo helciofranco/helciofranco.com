@@ -10,12 +10,17 @@ const Home = () => {
       <Text variant="h4">h4. Headline</Text>
       <Text variant="h5">h5. Headline</Text>
       <Text variant="h6">h6. Headline</Text>
+
       <Text color="secondary">
         Everything you need to learn{' '}
         <Text color="highlight" as="span">
           TypeScript
         </Text>{' '}
         in just 4 minutes
+      </Text>
+
+      <Text color="secondary" variant="h6" serif>
+        The quick brown fox jumps over the lazy dog.
       </Text>
     </Box>
   );

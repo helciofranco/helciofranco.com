@@ -13,7 +13,7 @@ const globalStyles = globalCss({
   },
   body: {
     margin: '0', // Remove the margin in all browsers.
-    fontFamily: '$body',
+    fontFamily: '$sans',
     fontSize: '1rem',
     backgroundColor: '$backgroundPrimary',
   },

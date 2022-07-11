@@ -1,35 +1,41 @@
+/* main font */
 @font-face {
-  font-family: 'Biotif';
-  src: url('/fonts/Biotif-Bold.woff2') format('woff2'),
-    url('/fonts/Biotif-Bold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Biotif';
-  src: url('/fonts/Biotif-Book.woff2') format('woff2'),
-    url('/fonts/Biotif-Book.woff') format('woff');
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Biotif';
-  src: url('/fonts/Biotif-Regular.woff2') format('woff2'),
-    url('/fonts/Biotif-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Biotif';
-  src: url('/fonts/Biotif-RegularItalic.woff2') format('woff2'),
-    url('/fonts/Biotif-RegularItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: optional;
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* for code snippets */
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('/fonts/Source-Code-Pro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }

@@ -28,7 +28,9 @@ export const {
       xl: '12px',
     },
     fonts: {
-      body: 'Biotif, -apple-system, ui-sans-serif, system-ui, Helvetica Neue, Arial, sans-serif',
+      sans: '"Inter", -apple-system, ui-sans-serif, system-ui, "Helvetica Neue", Arial, sans-serif', // main font
+      serif: 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif', // for blog posts
+      mono: '"Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace', // font code snippets
     },
     fontSizes: {
       h1: '6rem',
@@ -40,9 +42,10 @@ export const {
       body: '1rem',
     },
     fontWeights: {
-      normal: 'normal',
+      bold: 700,
       medium: 500,
-      bold: 'bold',
+      regular: 400,
+      light: 300,
     },
     lineHeights: {
       h1: '1.167',
