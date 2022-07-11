@@ -4,7 +4,7 @@
     url('/fonts/Biotif-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
     url('/fonts/Biotif-Book.woff') format('woff');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -22,7 +22,7 @@
     url('/fonts/Biotif-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -31,5 +31,5 @@
     url('/fonts/Biotif-RegularItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
+  font-display: optional;
 }

@@ -1,7 +1,8 @@
+import { Wrapper } from './styles';
 import { Props } from './types';
 
 const Base = ({ children }: Props) => {
-  return <div>{children}</div>;
+  return <Wrapper>{children}</Wrapper>;
 };
 
 export default Base;

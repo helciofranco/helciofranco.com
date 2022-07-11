@@ -28,7 +28,7 @@ export const {
       xl: '12px',
     },
     fonts: {
-      body: 'Biotif, sans-serif',
+      body: 'Biotif, -apple-system, ui-sans-serif, system-ui, Helvetica Neue, Arial, sans-serif',
     },
     fontSizes: {
       h1: '6rem',
