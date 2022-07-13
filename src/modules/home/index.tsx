@@ -3,6 +3,13 @@ import Card from '@components/Card';
 import Code from '@components/Code';
 import Text from '@components/Text';
 
+/**
+ * TODO
+ * Ver como fazer um card de erro, info, warning e sucesso.
+ * Ver como renderizar o editor de código literalmente (igual na doc beta do reactjs).
+ * Publishar o primeiro article (sem home ainda).
+ */
+
 const Home = () => {
   return (
     <Box>

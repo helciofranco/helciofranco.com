@@ -20,6 +20,14 @@ const globalStyles = globalCss({
   code: {
     fontFamily: '$serif',
   },
+  ul: {
+    margin: 0,
+    padding: 0,
+  },
+  li: {
+    marginLeft: '$space10',
+    color: '$textPrimary',
+  },
 });
 
 globalStyles();
