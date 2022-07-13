@@ -13,3 +13,7 @@ export const Wrapper = styled('div', {
 export const Header = styled('header', {
   marginBottom: '$space14',
 });
+
+export const Footer = styled('header', {
+  marginTop: '$space14',
+});

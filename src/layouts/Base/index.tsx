@@ -1,5 +1,5 @@
 import Menu from './Menu';
-import { Header, Wrapper } from './styles';
+import { Footer, Header, Wrapper } from './styles';
 import { Props } from './types';
 
 const Base = ({ children }: Props) => {
@@ -11,7 +11,7 @@ const Base = ({ children }: Props) => {
 
       <main>{children}</main>
 
-      <footer>Footer</footer>
+      <Footer>Footer</Footer>
     </Wrapper>
   );
 };
