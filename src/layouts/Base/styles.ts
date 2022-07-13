@@ -2,7 +2,10 @@ import { styled } from '@libs/stitches';
 
 export const Wrapper = styled('div', {
   maxWidth: '800px',
-  paddingLeft: '$space8',
+  paddingTop: '$space16',
+  paddingBottom: '$space16',
   paddingRight: '$space8',
-  margin: '0 auto',
+  paddingLeft: '$space8',
+  marginLeft: 'auto',
+  marginRight: 'auto',
 });

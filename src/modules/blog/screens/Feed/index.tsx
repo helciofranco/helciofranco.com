@@ -12,7 +12,7 @@ const Feed = () => {
     <Box>
       <AboutMe />
 
-      <Separator css={{ marginTop: '$space8', marginBottom: '$space8' }} />
+      <Separator css={{ marginTop: '$space11', marginBottom: '$space11' }} />
 
       <Text css={{ marginBottom: '$space10' }}>
         Let’s say you have a <Code variant="secondary">PackingList</Code>{' '}
