@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import Main from '@home/index';
+import Feed from '@blog/screens/Feed';
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <title>Hélcio Franco</title>
       </Head>
 
-      <Main />
+      <Feed />
     </>
   );
 };

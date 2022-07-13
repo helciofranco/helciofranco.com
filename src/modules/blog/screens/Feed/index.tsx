@@ -2,6 +2,7 @@ import Box from '@components/Box';
 import Card from '@components/Card';
 import Code from '@components/Code';
 import Link from '@components/Link';
+import Separator from '@components/Separator';
 import Text from '@components/Text';
 
 const Feed = () => {
@@ -23,6 +24,8 @@ const Feed = () => {
         </Text>{' '}
         in just 4 minutes <Code>if</Code> and <Code>{'&&'}</Code>
       </Text>
+
+      <Separator />
 
       <Text css={{ marginBottom: '$space10' }}>
         Let’s say you have a <Code>PackingList</Code> component rendering
