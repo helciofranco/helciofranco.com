@@ -5,7 +5,7 @@ import type {
 } from 'next';
 import Head from 'next/head';
 
-import Main from '@blog/screens/Main';
+import Feed from '@blog/screens/Feed';
 
 type Params = {
   slug: string;
@@ -18,7 +18,8 @@ const Post = ({ slug }: InferGetStaticPropsType<typeof getStaticProps>) => {
         <title>{slug}</title>
       </Head>
 
-      <Main />
+      {/* TODO: Move to post */}
+      <Feed />
     </>
   );
 };

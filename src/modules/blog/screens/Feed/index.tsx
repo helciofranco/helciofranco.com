@@ -4,7 +4,7 @@ import Code from '@components/Code';
 import Link from '@components/Link';
 import Text from '@components/Text';
 
-const Home = () => {
+const Feed = () => {
   return (
     <Box>
       <Text variant="h1">h1. Headline</Text>
@@ -62,4 +62,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Feed;
