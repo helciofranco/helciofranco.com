@@ -8,28 +8,13 @@ import Text from '@components/Text';
 const Feed = () => {
   return (
     <Box>
-      <Text variant="h1">h1. Headline</Text>
-      <Text variant="h2">h2. Headline</Text>
-      <Text variant="h3">h3. Headline</Text>
-      <Text variant="h4">h4. Headline</Text>
-      <Text variant="h5">h5. Headline</Text>
-      <Text variant="h6" css={{ marginBottom: '$space10' }}>
-        h6. Headline
-      </Text>
+      <Text variant="h5">Hélcio Franco 🇧🇷</Text>
 
-      <Text color="secondary" css={{ marginBottom: '$space10' }}>
-        Everything you need to learn{' '}
-        <Text color="highlight" as="span">
-          TypeScript
-        </Text>{' '}
-        in just 4 minutes <Code>if</Code> and <Code>{'&&'}</Code>
-      </Text>
-
-      <Separator />
+      <Separator css={{ marginTop: '$space8', marginBottom: '$space8' }} />
 
       <Text css={{ marginBottom: '$space10' }}>
-        Let’s say you have a <Code>PackingList</Code> component rendering
-        several Items, which can be marked as packed or not:
+        Let’s say you have a <Code variant="secondary">PackingList</Code>{' '}
+        component rendering several Items, which can be marked as packed or not:
       </Text>
 
       <Text
