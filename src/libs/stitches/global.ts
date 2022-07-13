@@ -28,6 +28,9 @@ const globalStyles = globalCss({
     marginLeft: '$space10',
     color: '$textPrimary',
   },
+  a: {
+    textDecoration: 'inherit',
+  },
 });
 
 globalStyles();
