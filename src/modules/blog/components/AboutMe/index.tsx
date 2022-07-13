@@ -2,6 +2,10 @@ import Box from '@components/Box';
 import Avatar from '@components/Avatar';
 import Text from '@components/Text';
 
+/**
+ * @TODO: Detect and display my current country (based probably Nomadlist API)
+ */
+
 const AboutMe = () => {
   return (
     <Box

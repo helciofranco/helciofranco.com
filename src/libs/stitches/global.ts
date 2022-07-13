@@ -24,10 +24,6 @@ const globalStyles = globalCss({
     margin: 0,
     padding: 0,
   },
-  li: {
-    marginLeft: '$space10',
-    color: '$textPrimary',
-  },
   a: {
     textDecoration: 'inherit',
   },

@@ -9,3 +9,7 @@ export const Wrapper = styled('div', {
   marginLeft: 'auto',
   marginRight: 'auto',
 });
+
+export const Header = styled('header', {
+  marginBottom: '$space14',
+});
