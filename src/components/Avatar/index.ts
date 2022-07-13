@@ -5,8 +5,12 @@ const Avatar = styled('img', {
   variants: {
     size: {
       small: {
-        width: 56,
-        height: 56,
+        width: 60,
+        height: 60,
+      },
+      medium: {
+        width: 120,
+        height: 120,
       },
     },
   },

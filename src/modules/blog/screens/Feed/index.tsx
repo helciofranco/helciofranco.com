@@ -5,10 +5,12 @@ import Link from '@components/Link';
 import Separator from '@components/Separator';
 import Text from '@components/Text';
 
+import AboutMe from '@blog/components/AboutMe';
+
 const Feed = () => {
   return (
     <Box>
-      <Text variant="h5">Hélcio Franco 🇧🇷</Text>
+      <AboutMe />
 
       <Separator css={{ marginTop: '$space8', marginBottom: '$space8' }} />
 
