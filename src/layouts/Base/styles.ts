@@ -9,11 +9,3 @@ export const Body = styled('div', {
   marginLeft: 'auto',
   marginRight: 'auto',
 });
-
-export const HeaderContainer = styled('header', {
-  marginBottom: '$space14',
-});
-
-export const FooterContainer = styled('footer', {
-  marginTop: '$space14',
-});

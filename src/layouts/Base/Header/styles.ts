@@ -1,5 +1,9 @@
 import { styled } from '@libs/stitches';
 
+export const Container = styled('header', {
+  marginBottom: '$space14',
+});
+
 export const Ul = styled('ul', {
   display: 'flex',
   justifyContent: 'center',

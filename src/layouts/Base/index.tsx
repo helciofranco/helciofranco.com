@@ -1,17 +1,15 @@
-import Menu from './Menu';
-import { FooterContainer, HeaderContainer, Body } from './styles';
+import Footer from './Footer';
+import Header from './Header';
+
+import { Body } from './styles';
 import { Props } from './types';
 
 const Base = ({ children }: Props) => {
   return (
     <Body>
-      <HeaderContainer>
-        <Menu />
-      </HeaderContainer>
-
+      <Header />
       <main>{children}</main>
-
-      <FooterContainer>Footer</FooterContainer>
+      <Footer />
     </Body>
   );
 };
