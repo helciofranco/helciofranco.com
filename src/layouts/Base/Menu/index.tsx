@@ -6,23 +6,23 @@ const Menu = () => {
     <nav>
       <Ul>
         <li>
-          <Link href="Home" passHref>
-            <Item>Home</Item>
+          <Link href="/" passHref>
+            <Item>HOME</Item>
           </Link>
         </li>
         <li>
-          <Link href="Home" passHref>
-            <Item>Blog</Item>
+          <Link href="/blog" passHref>
+            <Item>BLOG</Item>
           </Link>
         </li>
         <li>
-          <Link href="Home" passHref>
-            <Item>Tools</Item>
+          <Link href="/tools" passHref>
+            <Item>TOOLS</Item>
           </Link>
         </li>
         <li>
-          <Link href="Home" passHref>
-            <Item>Setup</Item>
+          <Link href="/setup" passHref>
+            <Item>SETUP</Item>
           </Link>
         </li>
       </Ul>
