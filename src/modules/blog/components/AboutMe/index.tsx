@@ -31,7 +31,7 @@ const AboutMe = () => {
         </Text>
         <Text variant="body" color="secondary">
           Helping developers to create a better web.
-          <br />I talk about developer experience with code and words.
+          <br />I talk about developer experience with code.
         </Text>
       </Box>
 
