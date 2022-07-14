@@ -1,6 +1,6 @@
 import { styled } from '@libs/stitches';
 
-export const Wrapper = styled('div', {
+export const Body = styled('div', {
   maxWidth: '800px',
   paddingTop: '$none',
   paddingBottom: '$space16',
@@ -10,10 +10,10 @@ export const Wrapper = styled('div', {
   marginRight: 'auto',
 });
 
-export const Header = styled('header', {
+export const HeaderContainer = styled('header', {
   marginBottom: '$space14',
 });
 
-export const Footer = styled('header', {
+export const FooterContainer = styled('footer', {
   marginTop: '$space14',
 });

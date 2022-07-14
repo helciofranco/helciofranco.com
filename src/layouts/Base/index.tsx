@@ -1,18 +1,18 @@
 import Menu from './Menu';
-import { Footer, Header, Wrapper } from './styles';
+import { FooterContainer, HeaderContainer, Body } from './styles';
 import { Props } from './types';
 
 const Base = ({ children }: Props) => {
   return (
-    <Wrapper>
-      <Header>
+    <Body>
+      <HeaderContainer>
         <Menu />
-      </Header>
+      </HeaderContainer>
 
       <main>{children}</main>
 
-      <Footer>Footer</Footer>
-    </Wrapper>
+      <FooterContainer>Footer</FooterContainer>
+    </Body>
   );
 };
 
