@@ -35,8 +35,7 @@ const Feed = () => {
           color="secondary"
           css={{ marginLeft: '$space5', marginRight: '$space5' }}
         >
-          {' '}
-          •{' '}
+          •
         </Text>
         <ReadTime>5 minutes</ReadTime>
       </Box>
