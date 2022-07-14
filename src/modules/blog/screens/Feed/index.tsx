@@ -1,13 +1,14 @@
 import Box from '@components/Box';
 import Card from '@components/Card';
 import Code from '@components/Code';
-import Link from '@components/Link';
 import Separator from '@components/Separator';
 import Text from '@components/Text';
 
 import AboutMe from '@blog/components/AboutMe';
 import Ul from '@components/List/Ul';
 import Li from '@components/List/Li';
+
+import Title from '@blog/components/Title';
 
 const Feed = () => {
   return (
@@ -16,8 +17,18 @@ const Feed = () => {
 
       <Separator css={{ marginTop: '$space11', marginBottom: '$space11' }} />
 
+      <Title>
+        Using getStaticProps and getStaticPaths with TypeScript on Next.js
+      </Title>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
       <Text css={{ marginBottom: '$space10' }}>
-        Let’s say you have a <Code variant="secondary">PackingList</Code>{' '}
+        Let's say you have a <Code variant="secondary">PackingList</Code>{' '}
         component rendering several Items, which can be marked as packed or not:
       </Text>
 

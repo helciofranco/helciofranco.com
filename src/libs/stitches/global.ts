@@ -27,6 +27,11 @@ const globalStyles = globalCss({
   a: {
     textDecoration: 'inherit',
   },
+  'h1, h2, h3, h4, h5, h6': {
+    fontFamily: 'inherit',
+    fontWeight: 'inherit',
+    fontStyle: 'inherit',
+  },
 });
 
 globalStyles();
