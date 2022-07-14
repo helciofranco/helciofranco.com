@@ -28,6 +28,7 @@ const Feed = () => {
           display: 'flex',
           justifyContent: 'center',
           marginTop: '$space8',
+          marginBottom: '$space14',
         }}
       >
         <Date datetime="2022-07-12T16:02:33.758Z">Jul 14, 2022</Date>
@@ -40,17 +41,10 @@ const Feed = () => {
         <ReadTime>5 minutes</ReadTime>
       </Box>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
       <Text css={{ marginBottom: '$space10' }}>
-        Let's say you have a <Code variant="secondary">PackingList</Code>{' '}
+        Lets say you have a <Code variant="secondary">PackingList</Code>{' '}
         component rendering several Items, which can be marked as packed or not:
       </Text>
-
       <Text
         color="secondary"
         variant="h6"
@@ -60,7 +54,6 @@ const Feed = () => {
         The quick brown fox jumps over the lazy dog. <Code>if</Code> and{' '}
         <Code>{'&&'}</Code>
       </Text>
-
       <Card css={{ marginTop: '$space6' }}>
         <Text
           variant="h6"

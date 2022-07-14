@@ -8,8 +8,8 @@ const Separator = styled('hr', {
   variants: {
     space: {
       regular: {
-        marginTop: '$space11',
-        marginBottom: '$space11',
+        marginTop: '$space14',
+        marginBottom: '$space14',
       },
     },
   },
