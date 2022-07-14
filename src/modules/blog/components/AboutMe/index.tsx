@@ -11,12 +11,12 @@ const AboutMe = () => {
     <Box
       css={{
         display: 'flex',
-        flexDirection: 'row',
         alignItems: 'flex-start',
         justifyContent: 'space-between',
+        flexDirection: 'row',
       }}
     >
-      <Box css={{ maxWidth: 600, paddingRight: '$space16' }}>
+      <Box css={{ maxWidth: 600, marginRight: '$space16' }}>
         <Text
           variant="h4"
           css={{ fontWeight: '$bold', marginBottom: '$space2' }}
