@@ -17,7 +17,7 @@ const Feed = () => {
     <Box>
       <AboutMe />
 
-      <Separator css={{ marginTop: '$space11', marginBottom: '$space11' }} />
+      <Separator space="regular" />
 
       <Title>
         Using getStaticProps and getStaticPaths with TypeScript on Next.js
