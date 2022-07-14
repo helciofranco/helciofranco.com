@@ -1,7 +1,6 @@
 import { styled } from '@libs/stitches';
 
 export const Ul = styled('ul', {
-  listStyle: 'none',
   display: 'flex',
   justifyContent: 'center',
 });

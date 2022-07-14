@@ -21,8 +21,8 @@ const globalStyles = globalCss({
     fontFamily: '$serif',
   },
   ul: {
-    margin: 0,
     padding: 0,
+    listStyle: 'none',
   },
   a: {
     textDecoration: 'inherit',
