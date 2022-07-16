@@ -15,7 +15,7 @@ const Feed = () => {
 
       <Separator space="regular" />
 
-      <PostContainer marginBottom="sm">
+      <PostContainer marginBottom="sm" css={{ marginBottom: '$space16' }}>
         <Link href="/testing">
           <a>
             <Text variant="h2" as="h3">
