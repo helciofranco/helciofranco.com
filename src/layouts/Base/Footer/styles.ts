@@ -4,7 +4,6 @@ export const Container = styled('footer', {
   marginTop: '$space14',
   marginBottom: '$space14',
   display: 'flex',
-  justifyContent: 'center',
   gridColumnGap: '10px',
 });
 

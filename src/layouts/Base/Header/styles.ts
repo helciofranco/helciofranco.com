@@ -7,7 +7,6 @@ export const Container = styled('header', {
 
 export const Ul = styled('ul', {
   display: 'flex',
-  justifyContent: 'center',
   gridColumnGap: '10px',
 });
 

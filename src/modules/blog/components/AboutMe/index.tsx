@@ -11,12 +11,15 @@ const AboutMe = () => {
     <Box
       css={{
         display: 'flex',
-        alignItems: 'flex-start',
-        justifyContent: 'space-between',
         flexDirection: 'row',
       }}
     >
-      <Box css={{ maxWidth: 600, marginRight: '$space16' }}>
+      <Avatar
+        src="https://avatars.githubusercontent.com/u/7074983?v=4"
+        size="sm"
+      />
+
+      <Box css={{ marginLeft: '$space16' }}>
         <Text
           variant="h1"
           css={{ fontWeight: '$medium', marginBottom: '$space2' }}
@@ -31,11 +34,6 @@ const AboutMe = () => {
           <br />I talk about developer experience with code.
         </Text>
       </Box>
-
-      <Avatar
-        src="https://avatars.githubusercontent.com/u/7074983?v=4"
-        size="md"
-      />
     </Box>
   );
 };

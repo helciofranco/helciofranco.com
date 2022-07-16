@@ -8,9 +8,9 @@ const Avatar = styled('img', {
         width: 24,
         height: 24,
       },
-      md: {
-        width: 120,
-        height: 120,
+      sm: {
+        width: 144,
+        height: 144,
       },
     },
   },
