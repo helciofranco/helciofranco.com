@@ -18,16 +18,13 @@ const AboutMe = () => {
     >
       <Box css={{ maxWidth: 600, marginRight: '$space16' }}>
         <Text
-          variant="h4"
-          css={{ fontWeight: '$bold', marginBottom: '$space2' }}
+          variant="h1"
+          css={{ fontWeight: '$medium', marginBottom: '$space2' }}
         >
           Hélcio Franco 🇧🇷
         </Text>
         <Text variant="body" css={{ marginBottom: '$space7' }}>
-          Tech Lead at{' '}
-          <Text as="span" css={{ fontWeight: '$medium' }}>
-            TradersClub (TC)
-          </Text>
+          Tech Lead at TradersClub (TC).
         </Text>
         <Text variant="body" color="secondary">
           Helping developers to create a better web.

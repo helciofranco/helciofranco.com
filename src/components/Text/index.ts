@@ -18,28 +18,16 @@ const Text = styled('p', {
     // Font-size
     variant: {
       h1: {
-        fontSize: '$7xl',
-        lineHeight: '$7xl',
-      },
-      h2: {
-        fontSize: '$6xl',
-        lineHeight: '$6xl',
-      },
-      h3: {
-        fontSize: '$5xl',
-        lineHeight: '$5xl',
-      },
-      h4: {
-        fontSize: '$4xl',
-        lineHeight: '$4xl',
-      },
-      h5: {
-        fontSize: '$3xl',
-        lineHeight: '$3xl',
-      },
-      h6: {
         fontSize: '$2xl',
         lineHeight: '$2xl',
+      },
+      h2: {
+        fontSize: '$xl',
+        lineHeight: '$xl',
+      },
+      h3: {
+        fontSize: '$lg',
+        lineHeight: '$lg',
       },
       body: {
         fontSize: '$base',
