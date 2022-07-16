@@ -1,6 +1,6 @@
 import { styled } from '@libs/stitches';
 
-const Article = styled('article', {
+const PostContainer = styled('article', {
   // Header and subheaders
   ['& h1, h2, h3']: {
     fontWeight: '$bold',
@@ -11,4 +11,4 @@ const Article = styled('article', {
   },
 });
 
-export default Article;
+export default PostContainer;
