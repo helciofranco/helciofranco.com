@@ -13,18 +13,14 @@ const AboutMe = () => {
       css={{
         display: 'flex',
         flexDirection: 'row',
+        justifyContent: 'space-between',
       }}
     >
-      <Avatar
-        src="https://avatars.githubusercontent.com/u/7074983?v=4"
-        size="sm"
-      />
-
-      <Box css={{ marginLeft: '$space16' }}>
+      <div>
         <Text
           variant="h1"
           as="h1"
-          css={{ fontWeight: '$medium', marginBottom: '$space2' }}
+          css={{ fontWeight: '$bold', marginBottom: '$space2' }}
         >
           Hélcio Franco 🇧🇷
         </Text>
@@ -35,7 +31,12 @@ const AboutMe = () => {
           Helping developers to create a better web.
           <br />I talk about developer experience with code.
         </Text>
-      </Box>
+      </div>
+
+      <Avatar
+        src="https://avatars.githubusercontent.com/u/7074983?v=4"
+        size="sm"
+      />
     </Box>
   );
 };
