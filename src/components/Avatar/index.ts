@@ -4,11 +4,11 @@ const Avatar = styled('img', {
   borderRadius: '$full',
   variants: {
     size: {
-      small: {
-        width: 60,
-        height: 60,
+      xs: {
+        width: 24,
+        height: 24,
       },
-      medium: {
+      md: {
         width: 120,
         height: 120,
       },

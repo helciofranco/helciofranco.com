@@ -34,7 +34,7 @@ const AboutMe = () => {
 
       <Avatar
         src="https://avatars.githubusercontent.com/u/7074983?v=4"
-        size="medium"
+        size="md"
       />
     </Box>
   );

@@ -5,21 +5,20 @@ import type {
 } from 'next';
 import Head from 'next/head';
 
-import Feed from '@blog/screens/Feed';
+import Post from '@blog/screens/Post';
 
 type Params = {
   slug: string;
 };
 
-const Post = ({ slug }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Slug = ({ slug }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Head>
         <title>{slug}</title>
       </Head>
 
-      {/* TODO: Move to post */}
-      <Feed />
+      <Post />
     </>
   );
 };
@@ -51,4 +50,4 @@ export const getStaticPaths: GetStaticPaths<Params> = async () => {
   };
 };
 
-export default Post;
+export default Slug;

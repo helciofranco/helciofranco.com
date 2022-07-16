@@ -4,7 +4,7 @@ import { Props } from './types';
 
 const PostTitle = ({ children }: Props) => {
   return (
-    <Text variant="h1" as="h1" css={{ textAlign: 'center' }}>
+    <Text variant="h1" as="h1">
       {children}
     </Text>
   );
