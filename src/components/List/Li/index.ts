@@ -1,10 +1,8 @@
 import { styled } from '@libs/stitches';
 
 const Li = styled('li', {
-  '&:before': {
-    content: '•',
-    paddingRight: '$space3',
-  },
+  marginTop: '$space4',
+  marginBottom: '$space4',
 });
 
 export default Li;

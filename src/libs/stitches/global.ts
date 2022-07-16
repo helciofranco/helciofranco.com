@@ -20,8 +20,9 @@ const globalStyles = globalCss({
   code: {
     fontFamily: '$serif',
   },
-  ul: {
+  'ol, ul': {
     padding: 0,
+    margin: 0,
     listStyle: 'none',
   },
   a: {

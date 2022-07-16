@@ -62,7 +62,11 @@ const Feed = () => {
           You will learn <Code>if</Code> and <Code>{'&&'}</Code>
         </Text>
 
-        <Ul>
+        <Ul variant="primary">
+          <Li>How to create and nest components</Li>
+          <Li>How to create and nest components</Li>
+          <Li>How to create and nest components</Li>
+          <Li>How to create and nest components</Li>
           <Li>How to create and nest components</Li>
         </Ul>
       </Card>

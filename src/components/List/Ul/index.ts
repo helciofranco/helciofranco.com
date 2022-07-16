@@ -1,6 +1,8 @@
 import { styled } from '@libs/stitches';
 
 const Ul = styled('ul', {
+  listStyleType: 'disc',
+  marginLeft: '$space10',
   variants: {
     variant: {
       primary: {
