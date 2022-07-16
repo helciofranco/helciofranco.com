@@ -25,11 +25,7 @@ const Feed = () => {
 
       <PostInfo />
 
-      <Text
-        variant="h2"
-        css={{ fontWeight: '$bold', color: '$textInteractive' }}
-        marginBottom
-      >
+      <Text variant="h2" marginBottom>
         The stack
       </Text>
 
@@ -73,8 +69,8 @@ const Feed = () => {
       <Text marginBottom>But the most critical part of my stack is MDX.</Text>
 
       <Text marginBottom>
-        Lets say you have a <Code variant="secondary">PackingList</Code>{' '}
-        component rendering several Items, which can be marked as packed or not:
+        Lets say you have a <Code>PackingList</Code> component rendering several
+        Items, which can be marked as packed or not:
       </Text>
 
       <Text color="secondary" serif marginBottom>
@@ -86,12 +82,8 @@ const Feed = () => {
         The quick brown fox jumps over the lazy dog.
       </Text>
 
-      <Text color="interactive" serif marginBottom>
-        The quick brown fox jumps over the lazy dog.
-      </Text>
-
       <Card>
-        <Text variant="h3" marginBottom css={{ fontWeight: '$bold' }}>
+        <Text variant="h3" marginBottom>
           You will learn <Code>if</Code> and <Code>{'&&'}</Code>
         </Text>
 
