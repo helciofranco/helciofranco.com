@@ -23,7 +23,7 @@ export const CustomText = styled(Text, {
 
 const Link = ({ children, ...props }: Props) => {
   return (
-    <NextLink {...props} passHref>
+    <NextLink {...props} prefetch={false} passHref>
       <CustomText as="a" color="interactive">
         {children}
       </CustomText>
