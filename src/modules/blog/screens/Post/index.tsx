@@ -8,12 +8,13 @@ import Li from '@components/List/Li';
 
 import PostContainer from '@blog/components/PostContainer';
 import PostInfo from '@blog/components/PostInfo';
-import PostTitle from '@blog/components/PostTitle';
 
 const Post = () => {
   return (
     <PostContainer>
-      <PostTitle>How I built my blog</PostTitle>
+      <Text variant="h1" as="h1">
+        How I built my blog
+      </Text>
 
       <PostInfo />
 
