@@ -11,8 +11,8 @@ const Text = styled('p', {
       secondary: {
         color: '$textSecondary',
       },
-      highlight: {
-        color: '$textHighlight',
+      interactive: {
+        color: '$textInteractive',
       },
     },
     // Font-size

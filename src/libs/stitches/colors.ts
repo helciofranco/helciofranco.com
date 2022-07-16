@@ -8,7 +8,7 @@ const colors = {
   textPrimary: '#fff',
   textSecondary: '#a9adc1',
   textTertiary: '#ebecf0',
-  textHighlight: '#36a3ff',
+  textInteractive: '#36a3ff',
 
   // borders
   borderPrimary: 'rgba(255, 255, 255, 0.15)',

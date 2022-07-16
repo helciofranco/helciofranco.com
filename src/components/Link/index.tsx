@@ -17,14 +17,14 @@ export const CustomText = styled(Text, {
   borderBottomColor: 'transparent',
 
   '&:hover': {
-    borderBottomColor: '$textHighlight',
+    borderBottomColor: '$textInteractive',
   },
 });
 
 const Link = ({ children, ...props }: Props) => {
   return (
     <NextLink {...props} passHref>
-      <CustomText as="a" color="highlight">
+      <CustomText as="a" color="interactive">
         {children}
       </CustomText>
     </NextLink>

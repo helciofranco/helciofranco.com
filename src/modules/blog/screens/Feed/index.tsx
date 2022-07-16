@@ -10,6 +10,7 @@ import Li from '@components/List/Li';
 
 import PostTitle from '@blog/components/PostTitle';
 import PostInfo from '@blog/components/PostInfo';
+import Link from '@components/Link';
 
 const Feed = () => {
   return (
@@ -24,12 +25,15 @@ const Feed = () => {
 
       <PostInfo />
 
-      <Text marginBottom>This blog is a Next.js application.</Text>
+      <Text marginBottom>
+        This blog is a <Link href="aaaaa">Next.js application</Link>.
+      </Text>
       <Text marginBottom>
         With Next, you have a few different options when it comes to page
-        rendering: you can choose to do it “on-demand” (server-side rendering)
-        or ahead of time (static site generation). I&rsquo;ve opted to build all
-        the blog posts ahead of time, when the site is generated.
+        rendering: you can choose to do it “on-demand” (
+        <b>server-side rendering</b>) or ahead of time (
+        <b>static site generation</b>). I&rsquo;ve opted to build all the blog
+        posts ahead of time, when the site is generated.
       </Text>
       <Text marginBottom>
         I also use Next&rsquo;s API Routes for things that require persistence
