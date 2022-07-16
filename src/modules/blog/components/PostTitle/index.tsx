@@ -2,7 +2,7 @@ import Text from '@components/Text';
 
 import { Props } from './types';
 
-const Title = ({ children }: Props) => {
+const PostTitle = ({ children }: Props) => {
   return (
     <Text
       variant="h5"
@@ -14,4 +14,4 @@ const Title = ({ children }: Props) => {
   );
 };
 
-export default Title;
+export default PostTitle;

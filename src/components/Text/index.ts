@@ -52,6 +52,12 @@ const Text = styled('p', {
         fontFamily: '$serif',
       },
     },
+    // Margin bottom
+    marginBottom: {
+      true: {
+        marginBottom: '$space10',
+      },
+    },
   },
   defaultVariants: {
     color: 'primary',
