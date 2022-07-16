@@ -12,11 +12,6 @@ const colors = {
 
   // borders
   borderPrimary: 'rgba(255, 255, 255, 0.15)',
-
-  // components
-  backgroundCode: 'rgba(115,124,153,0.2)',
-  textCode: '#e8912d',
-  borderCode: 'rgba(232, 232, 232, 0.13)',
 };
 
 export default colors;

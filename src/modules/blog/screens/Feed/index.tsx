@@ -25,7 +25,11 @@ const Feed = () => {
 
       <PostInfo />
 
-      <Text variant="h2" css={{ fontWeight: '$bold' }} marginBottom>
+      <Text
+        variant="h2"
+        css={{ fontWeight: '$bold', color: '$textInteractive' }}
+        marginBottom
+      >
         The stack
       </Text>
 

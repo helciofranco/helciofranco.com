@@ -2,25 +2,22 @@ import { styled } from '@libs/stitches';
 
 const Code = styled('code', {
   fontWeight: '$regular',
+  fontSize: 'inherit',
 
   borderRadius: '$md',
 
-  paddingTop: '$one',
-  paddingBottom: '$one',
+  paddingTop: '$space1',
+  paddingBottom: '$space1',
   paddingLeft: '$space2',
   paddingRight: '$space2',
 
   variants: {
     variant: {
       primary: {
-        color: '$textTertiary',
-        backgroundColor: '$backgroundTertiary',
-      },
-      secondary: {
-        color: '$textCode',
-        backgroundColor: '$backgroundCode',
+        color: '$textPrimary',
+        backgroundColor: '$backgroundSecondary',
         border: '1px solid',
-        borderColor: '$borderCode',
+        borderColor: '$borderPrimary',
       },
     },
   },
