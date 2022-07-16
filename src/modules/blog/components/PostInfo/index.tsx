@@ -2,19 +2,12 @@ import Avatar from '@components/Avatar';
 import Box from '@components/Box';
 import Text from '@components/Text';
 
+import { Container } from './styles';
 import { Props } from './types';
 
 const PostInfo = ({ showAuthor = false }: Props) => {
   return (
-    <Box
-      css={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginTop: '$space8',
-        marginBottom: '$space16',
-      }}
-    >
+    <Container>
       {showAuthor && (
         <Box
           css={{
@@ -54,7 +47,7 @@ const PostInfo = ({ showAuthor = false }: Props) => {
           ☕ 5 minutes
         </Text>
       </div>
-    </Box>
+    </Container>
   );
 };
 

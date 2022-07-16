@@ -15,7 +15,7 @@ const Feed = () => {
 
       <Separator space="regular" />
 
-      <PostContainer>
+      <PostContainer marginBottom="sm">
         <Link href="/testing">
           <a>
             <Text variant="h2" as="h3">
@@ -27,7 +27,7 @@ const Feed = () => {
         <Text color="secondary">A small description...</Text>
       </PostContainer>
 
-      <PostContainer>
+      <PostContainer marginBottom="sm">
         <Link href="/testing">
           <a>
             <Text variant="h2" as="h3">
