@@ -16,11 +16,14 @@ const PostInfo = () => {
       </Text>
       <Text
         color="secondary"
+        as="span"
         css={{ marginLeft: '$space5', marginRight: '$space5' }}
       >
         •
       </Text>
-      <Text color="secondary">☕ 5 minutes</Text>
+      <Text color="secondary" as="span">
+        ☕ 5 minutes
+      </Text>
     </Box>
   );
 };
