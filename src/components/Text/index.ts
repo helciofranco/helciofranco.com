@@ -20,34 +20,24 @@ const Text = styled('p', {
       h1: {
         fontSize: '$2xl',
         lineHeight: '$2xl',
-        fontWeight: '$bold',
       },
       h2: {
         fontSize: '$xl',
         lineHeight: '$xl',
-        fontWeight: '$bold',
       },
       h3: {
         fontSize: '$lg',
         lineHeight: '$lg',
-        fontWeight: '$bold',
       },
       body: {
         fontSize: '$base',
         lineHeight: '$base',
-        fontWeight: '$regular',
       },
     },
     // Serif
     serif: {
       true: {
         fontFamily: '$serif',
-      },
-    },
-    // Margin bottom
-    marginBottom: {
-      true: {
-        marginBottom: '$space10',
       },
     },
   },
