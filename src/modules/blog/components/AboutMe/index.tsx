@@ -9,6 +9,7 @@ import Text from '@components/Text';
 const AboutMe = () => {
   return (
     <Box
+      as="aside"
       css={{
         display: 'flex',
         flexDirection: 'row',
@@ -22,11 +23,12 @@ const AboutMe = () => {
       <Box css={{ marginLeft: '$space16' }}>
         <Text
           variant="h1"
+          as="h1"
           css={{ fontWeight: '$medium', marginBottom: '$space2' }}
         >
           Hélcio Franco 🇧🇷
         </Text>
-        <Text variant="body" css={{ marginBottom: '$space7' }}>
+        <Text as="h2" variant="body" css={{ marginBottom: '$space7' }}>
           Tech Lead at TradersClub (TC).
         </Text>
         <Text variant="body" color="secondary">

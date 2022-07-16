@@ -33,6 +33,13 @@ const globalStyles = globalCss({
     fontWeight: 'inherit',
     fontStyle: 'inherit',
   },
+  '#__next': {
+    maxWidth: '800px',
+    paddingRight: '$space8',
+    paddingLeft: '$space8',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
 });
 
 globalStyles();

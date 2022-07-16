@@ -2,7 +2,9 @@ import Avatar from '@components/Avatar';
 import Box from '@components/Box';
 import Text from '@components/Text';
 
-const PostInfo = () => {
+import { Props } from './types';
+
+const PostInfo = ({ showAuthor = false }: Props) => {
   return (
     <Box
       css={{
@@ -13,27 +15,29 @@ const PostInfo = () => {
         marginBottom: '$space16',
       }}
     >
-      <Box
-        css={{
-          display: 'flex',
-          alignItems: 'center',
-        }}
-      >
-        <Avatar
-          src="https://avatars.githubusercontent.com/u/7074983?v=4"
-          size="xs"
-        />
-
+      {showAuthor && (
         <Box
           css={{
-            marginLeft: '$space4',
+            display: 'flex',
+            alignItems: 'center',
           }}
         >
-          <Text color="secondary" as="span">
-            Hélcio Franco
-          </Text>
+          <Avatar
+            src="https://avatars.githubusercontent.com/u/7074983?v=4"
+            size="xs"
+          />
+
+          <Box
+            css={{
+              marginLeft: '$space4',
+            }}
+          >
+            <Text color="secondary" as="span">
+              Hélcio Franco
+            </Text>
+          </Box>
         </Box>
-      </Box>
+      )}
 
       <div>
         <Text color="secondary" as="time" dateTime="2022-07-12T16:02:33.758Z">

@@ -3,7 +3,6 @@ import type {
   GetStaticProps,
   InferGetStaticPropsType,
 } from 'next';
-import Head from 'next/head';
 
 import Post from '@blog/screens/Post';
 
@@ -12,15 +11,7 @@ type Params = {
 };
 
 const Slug = ({ slug }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  return (
-    <>
-      <Head>
-        <title>{slug}</title>
-      </Head>
-
-      <Post />
-    </>
-  );
+  return <Post />;
 };
 
 export const getStaticProps: GetStaticProps<Params> = async ({ params }) => {
