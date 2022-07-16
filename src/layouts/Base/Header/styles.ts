@@ -1,6 +1,7 @@
 import { styled } from '@libs/stitches';
 
 export const Container = styled('header', {
+  marginTop: '$space14',
   marginBottom: '$space14',
 });
 
