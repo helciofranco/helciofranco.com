@@ -12,17 +12,17 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/blog" passHref>
+            <Link href="/testing" passHref>
               <Item>BLOG</Item>
             </Link>
           </li>
           <li>
-            <Link href="/tools" passHref>
+            <Link href="/testing-2" passHref>
               <Item>TOOLS</Item>
             </Link>
           </li>
           <li>
-            <Link href="/setup" passHref>
+            <Link href="/testing-3" passHref>
               <Item>SETUP</Item>
             </Link>
           </li>
