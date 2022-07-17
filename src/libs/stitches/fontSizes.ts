@@ -1,6 +1,7 @@
 const fontSizes = {
   // for captions
   xs: '0.75rem', // 12px
+  sm: '0.875rem', // 14px
 
   // for body
   base: '1rem', // 16px

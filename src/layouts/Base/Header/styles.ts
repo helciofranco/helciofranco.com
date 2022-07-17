@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import { styled } from '@libs/stitches';
 
 export const Container = styled('header', {
@@ -7,21 +9,55 @@ export const Container = styled('header', {
 
 export const Ul = styled('ul', {
   display: 'flex',
-  gridColumnGap: '10px',
 });
 
-export const Item = styled('a', {
+export const Anchor = styled('a', {
+  position: 'relative',
   display: 'block',
-  padding: '$space5',
 
-  backgroundColor: '$backgroundSecondary',
-  color: '$textPrimary',
-  borderRadius: '$sm',
+  transitionProperty: 'color',
+  transitionTimingFunction: 'cubic-bezier(.4,0,1,1)',
+  transitionDuration: '0.1s',
 
-  fontSize: '$xs',
+  fontSize: '$sm',
   fontWeight: '$medium',
 
+  color: '$textSecondary',
   '&:hover': {
-    backgroundColor: '$backgroundTertiary',
+    color: '$textPrimary',
   },
+
+  variants: {
+    active: {
+      true: {
+        color: '$textPrimary',
+      },
+    },
+  },
+  defaultVariants: {
+    active: false,
+  },
+});
+
+export const Item = styled(motion.span, {
+  display: 'inline-block',
+
+  paddingTop: '$space5',
+  paddingBottom: '$space5',
+  paddingLeft: '$space5',
+  paddingRight: '$space5',
+});
+
+export const ItemBackground = styled(motion.span, {
+  position: 'absolute',
+
+  top: 0,
+  bottom: 0,
+  left: 0,
+  right: 0,
+
+  backgroundColor: '$backgroundTertiary',
+
+  borderRadius: '$sm',
+  zIndex: -1,
 });
