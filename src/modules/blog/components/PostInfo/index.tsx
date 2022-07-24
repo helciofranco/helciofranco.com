@@ -1,7 +1,9 @@
+import format from 'date-fns/format';
+import fromUnixTime from 'date-fns/fromUnixTime';
+
 import Avatar from '@components/Avatar';
 import Box from '@components/Box';
 import Text from '@components/Text';
-
 import { Container } from './styles';
 import { Props } from './types';
 
@@ -37,7 +39,7 @@ const PostInfo = ({
 
       <div>
         <Text color="tertiary" as="time" dateTime="2022-07-12T16:02:33.758Z">
-          📌 {createdAt}
+          📌 {format(fromUnixTime(createdAt), 'MMMM dd, yyyy')}
         </Text>
         <Text
           color="tertiary"
