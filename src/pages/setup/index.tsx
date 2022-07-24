@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 
-import Feed from '@blog/screens/Feed';
+import Main from '@setup/screens/Main';
 
-const Setup: NextPage = () => {
-  return <Feed />;
+const Tools: NextPage = () => {
+  return <Main />;
 };
 
-export default Setup;
+export default Tools;

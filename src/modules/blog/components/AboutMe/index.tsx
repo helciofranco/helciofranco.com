@@ -13,12 +13,13 @@ const AboutMe = () => {
       css={{
         display: 'flex',
         flexDirection: 'row',
+        alignItems: 'flex-start',
         justifyContent: 'space-between',
       }}
     >
       <div>
         <Text
-          variant="h1"
+          variant="h3"
           as="h1"
           color="primary"
           css={{ marginBottom: '$space2' }}

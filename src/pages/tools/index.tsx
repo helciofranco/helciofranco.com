@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 
-import Feed from '@blog/screens/Feed';
+import Main from '@tools/screens/Main';
 
 const Tools: NextPage = () => {
-  return <Feed />;
+  return <Main />;
 };
 
 export default Tools;

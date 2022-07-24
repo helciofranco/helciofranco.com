@@ -20,7 +20,8 @@
       "@layouts/*": ["layouts/*"],
       "@libs/*": ["libs/*"],
       "@blog/*": ["modules/blog/*"],
-      "@home/*": ["modules/home/*"]
+      "@setup/*": ["modules/setup/*"],
+      "@tools/*": ["modules/tools/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
