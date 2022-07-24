@@ -6,6 +6,8 @@ const globalStyles = globalCss({
     // is not affected by `padding` or `border`.
     boxSizing: 'border-box',
   },
+
+  // Global wrappers
   html: {
     WebkitFontSmoothing: 'antialiased',
     WebkitTextSizeAdjust: '100%',
@@ -17,6 +19,15 @@ const globalStyles = globalCss({
     fontSize: '1rem',
     backgroundColor: '$backgroundPrimary',
   },
+  '#__next': {
+    maxWidth: '800px',
+    paddingRight: '$space8',
+    paddingLeft: '$space8',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  },
+
+  // Blocks of content
   code: {
     fontFamily: '$serif',
   },
@@ -33,12 +44,22 @@ const globalStyles = globalCss({
     fontWeight: 'inherit',
     fontStyle: 'inherit',
   },
-  '#__next': {
-    maxWidth: '800px',
-    paddingRight: '$space8',
-    paddingLeft: '$space8',
-    marginLeft: 'auto',
-    marginRight: 'auto',
+
+  // Scrollbar
+  '::-webkit-scrollbar': {
+    width: 10,
+    backgroundColor: '$backgroundSecondary',
+  },
+  '::-webkit-scrollbar-track': {
+    borderRadius: '$xs',
+    backgroundColor: 'transparent',
+  },
+  '::-webkit-scrollbar-thumb': {
+    borderRadius: '$md',
+    backgroundColor: '$textTertiary',
+    borderWidth: 2,
+    borderStyle: 'solid',
+    borderColor: '$backgroundSecondary',
   },
 });
 
