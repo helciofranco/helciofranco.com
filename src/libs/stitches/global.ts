@@ -56,7 +56,7 @@ const globalStyles = globalCss({
   },
   '::-webkit-scrollbar-thumb': {
     borderRadius: '$md',
-    backgroundColor: '$textTertiary',
+    backgroundColor: 'rgba(100, 116, 139, 0.5)', // slate-500/0.5
     borderWidth: 2,
     borderStyle: 'solid',
     borderColor: '$backgroundSecondary',
