@@ -1,5 +1,13 @@
 import { createStitches } from '@stitches/react';
 
+import colors from './colors';
+import fonts from './fonts';
+import fontSizes from './fontSizes';
+import fontWeights from './fontWeights';
+import lineHeights from './lineHeights';
+import radii from './radii';
+import space from './space';
+
 export const {
   styled,
   css,
@@ -11,30 +19,13 @@ export const {
   config,
 } = createStitches({
   theme: {
-    colors: {
-      gray400: '#FFF',
-      gray500: 'lightgray',
-    },
-    space: {
-      none: 0,
-      sm: '2px',
-      md: '4px',
-      lg: '8px',
-      xl: '12px',
-    },
-    fonts: {
-      body: 'Biotif, sans-serif',
-    },
-    fontSizes: {
-      sm: '12px',
-      md: '14px',
-      lg: '16px',
-    },
-    fontWeights: {
-      normal: 'normal',
-      medium: 500,
-      bold: 'bold',
-    },
+    colors,
+    fonts,
+    fontSizes,
+    fontWeights,
+    lineHeights,
+    radii,
+    space,
   },
   media: {
     sm: '(min-width: 480px)',

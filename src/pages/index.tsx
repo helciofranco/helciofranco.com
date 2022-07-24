@@ -1,16 +1,15 @@
-import type { NextPage } from 'next';
+import type { Layout } from 'next/app';
 import Head from 'next/head';
 
-import Main from '@blog/screens/Main';
+import Feed from '@blog/screens/Feed';
 
-const Home: NextPage = () => {
+const Home: Layout = () => {
   return (
     <>
       <Head>
-        <title>Hélcio Franco</title>
+        <title>Latest posts - Hélcio Franco</title>
       </Head>
-
-      <Main />
+      <Feed />
     </>
   );
 };

@@ -1,36 +1,41 @@
-import type {
-  GetStaticPaths,
-  GetStaticProps,
-  InferGetStaticPropsType,
-} from 'next';
+import { ReactElement } from 'react';
 import Head from 'next/head';
+import type { Layout } from 'next/app';
+import type { GetStaticPaths, GetStaticProps } from 'next';
 
-import Main from '@blog/screens/Main';
+import Post from '@blog/screens/Post';
+import ScrollIndicator from '@layouts/ScrollIndicator';
 
 type Params = {
+  title: string;
   slug: string;
 };
 
-const Post = ({ slug }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Slug: Layout<Params> = ({ title, slug }) => {
   return (
     <>
       <Head>
-        <title>{slug}</title>
+        <title>{title}</title>
       </Head>
-
-      <Main />
+      <Post slug={slug} />
     </>
   );
 };
 
+Slug.getLayout = (page: ReactElement) => {
+  return <ScrollIndicator>{page}</ScrollIndicator>;
+};
+
 export const getStaticProps: GetStaticProps<Params> = async ({ params }) => {
   // const data = await getPost(params.slug)
-  const { slug } = {
+  const { title, slug } = {
+    title: 'result here',
     slug: 'result here',
   };
 
   return {
     props: {
+      title,
       slug,
     },
   };
@@ -42,12 +47,12 @@ export const getStaticPaths: GetStaticPaths<Params> = async () => {
 
   return {
     paths: [
-      { params: { slug: 'testing' } },
-      { params: { slug: 'testing-2' } },
-      { params: { slug: 'testing-3' } },
+      { params: { title: 'Testing', slug: 'testing' } },
+      { params: { title: 'Testing 2', slug: 'testing-2' } },
+      { params: { title: 'Testing 3', slug: 'testing-3' } },
     ], // @TODO: Generate from posts.
     fallback: false,
   };
 };
 
-export default Post;
+export default Slug;
