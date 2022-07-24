@@ -1,10 +1,11 @@
 import Text from '@components/Text';
 
 import AboutMe from '@blog/components/AboutMe';
-
 import Post from '@blog/components/Feed/Post';
 
-const Feed = () => {
+import { Props } from './types';
+
+const Feed = ({ posts }: Props) => {
   return (
     <>
       <AboutMe />
@@ -15,21 +16,10 @@ const Feed = () => {
       >
         Latest posts
       </Text>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+
+      {posts.map((post) => (
+        <Post key={post.slug} slug={post.slug} title={post.title} />
+      ))}
     </>
   );
 };

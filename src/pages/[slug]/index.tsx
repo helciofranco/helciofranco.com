@@ -1,11 +1,12 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { serialize } from 'next-mdx-remote/serialize';
-import { MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { ReactElement } from 'react';
 import Head from 'next/head';
 import type { Layout } from 'next/app';
 import type { GetStaticPaths, GetStaticProps } from 'next';
+
+import { postsDirectory } from '@configs';
 
 import Post from '@blog/screens/Post';
 import ScrollIndicator from '@layouts/ScrollIndicator';
@@ -36,8 +37,6 @@ const Slug: Layout<Params> = ({ seo, title, compiledSource }) => {
 Slug.getLayout = (page: ReactElement) => {
   return <ScrollIndicator>{page}</ScrollIndicator>;
 };
-
-const postsDirectory = path.join(process.cwd(), 'posts');
 
 export const getStaticProps: GetStaticProps<Params> = async ({ params }) => {
   const filePath = path.join(postsDirectory, `${params?.slug as string}.mdx`);
