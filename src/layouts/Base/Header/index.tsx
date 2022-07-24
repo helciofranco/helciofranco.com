@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
 import { Container, Anchor, Item, ItemBackground, Ul } from './styles';
@@ -47,16 +46,14 @@ const Header = () => {
                     >
                       {title}
 
-                      <AnimatePresence>
-                        {shouldHighlight && (
-                          <ItemBackground
-                            layoutId="navHover"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                          />
-                        )}
-                      </AnimatePresence>
+                      {shouldHighlight && (
+                        <ItemBackground
+                          layoutId="navHover"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                        />
+                      )}
                     </Item>
                   </Anchor>
                 </Link>
