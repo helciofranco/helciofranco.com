@@ -3,6 +3,6 @@ export type Props = {
   title: string;
   authorName: string;
   authorImageSrc: string;
-  readtime: number;
+  readtime: string;
   createdAt: number;
 };

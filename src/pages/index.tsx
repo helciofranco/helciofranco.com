@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
+import readingTime from 'reading-time';
 import type { Layout } from 'next/app';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
@@ -31,13 +32,14 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     const { frontmatter } = await serialize(fileContents, {
       parseFrontmatter: true,
     });
+    const { text: readtime } = readingTime(fileContents);
 
     return {
       slug: filename.replace('.mdx', ''),
       title: frontmatter?.title ?? '',
       authorName: frontmatter?.authorName ?? '',
       authorImageSrc: frontmatter?.authorImageSrc ?? '',
-      readtime: parseInt(frontmatter?.readtime ?? '0', 10),
+      readtime,
       createdAt: parseInt(frontmatter?.createdAt ?? '0', 10),
     };
   });

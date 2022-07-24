@@ -5,6 +5,7 @@ import { ReactElement } from 'react';
 import Head from 'next/head';
 import type { Layout } from 'next/app';
 import type { GetStaticPaths, GetStaticProps } from 'next';
+import readingTime from 'reading-time';
 
 import { postsDirectory } from '@configs';
 
@@ -23,7 +24,7 @@ type Params = {
     title: string;
     authorName: string;
     authorImageSrc: string;
-    readtime: number;
+    readtime: string;
     createdAt: number;
   };
   compiledSource: string;
@@ -60,6 +61,7 @@ export const getStaticProps: GetStaticProps<Params> = async ({ params }) => {
   });
 
   const postTitle = frontmatter?.title ?? '';
+  const { text: readtime } = readingTime(fileContents);
 
   return {
     props: {
@@ -70,7 +72,7 @@ export const getStaticProps: GetStaticProps<Params> = async ({ params }) => {
         title: postTitle,
         authorName: frontmatter?.authorName ?? '',
         authorImageSrc: frontmatter?.authorImageSrc ?? '',
-        readtime: parseInt(frontmatter?.readtime ?? '0', 10),
+        readtime,
         createdAt: parseInt(frontmatter?.createdAt ?? '0', 10),
       },
       compiledSource,
