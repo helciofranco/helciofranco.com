@@ -25,7 +25,7 @@ const Home: Layout<Props> = ({ posts }) => {
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const filenames = await fs.readdir(postsDirectory);
 
-  const posts = filenames.map(async (filename) => {
+  const postsToParse = filenames.map(async (filename) => {
     const filePath = path.join(postsDirectory, filename);
     const fileContents = await fs.readFile(filePath, 'utf8');
 
@@ -44,9 +44,13 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     };
   });
 
+  const posts = await Promise.all(postsToParse);
+
   return {
     props: {
-      posts: await Promise.all(posts),
+      posts: posts.sort((post1, post2) =>
+        post1.createdAt > post2.createdAt ? -1 : 1
+      ),
     },
   };
 };
