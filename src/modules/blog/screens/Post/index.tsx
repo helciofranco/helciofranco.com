@@ -9,8 +9,8 @@ import Li from '@components/List/Li';
 import { MDXRemote } from 'next-mdx-remote';
 import { MDXComponents } from 'mdx/types';
 
-import PostContainer from '@blog/components/PostContainer';
-import PostInfo from '@blog/components/PostInfo';
+import PostContainer from '@blog/components/Details/PostContainer';
+import PostInfo from '@blog/components/Details/PostInfo';
 
 import { Props } from './types';
 

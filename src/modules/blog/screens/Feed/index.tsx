@@ -1,6 +1,6 @@
 import Text from '@components/Text';
 
-import AboutMe from '@blog/components/AboutMe';
+import AboutMe from '@blog/components/Feed/AboutMe';
 import Post from '@blog/components/Feed/Post';
 
 import { Props } from './types';

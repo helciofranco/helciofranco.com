@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Text from '@components/Text';
 
-import PostInfo from '@blog/components/PostInfo';
+import PostInfo from '@blog/components/Details/PostInfo';
 
 import { Highlight, PostContainer } from './styles';
 import { Props } from './types';

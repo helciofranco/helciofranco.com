@@ -1,6 +1,6 @@
 import { styled } from '@libs/stitches';
 
-import { Container as PostInfoContainer } from '@blog/components/PostInfo/styles';
+import { Container as PostInfoContainer } from '@blog/components/Details/PostInfo/styles';
 
 const PostContainer = styled('article', {
   // Spacing between subheaders and paragraphs
