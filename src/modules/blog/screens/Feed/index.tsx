@@ -1,12 +1,8 @@
-import Link from 'next/link';
-
-import Box from '@components/Box';
 import Separator from '@components/Separator';
-import Text from '@components/Text';
 
 import AboutMe from '@blog/components/AboutMe';
-import PostContainer from '@blog/components/PostContainer';
-import PostInfo from '@blog/components/PostInfo';
+
+import Post from '@blog/components/Feed/Post';
 
 const Feed = () => {
   return (
@@ -15,29 +11,12 @@ const Feed = () => {
 
       <Separator space="regular" />
 
-      <PostContainer marginBottom="sm" css={{ marginBottom: '$space16' }}>
-        <Link href="/testing">
-          <a>
-            <Text variant="h2" as="h3">
-              Title example
-            </Text>
-          </a>
-        </Link>
-        <PostInfo />
-        <Text color="secondary">A small description...</Text>
-      </PostContainer>
-
-      <PostContainer marginBottom="sm">
-        <Link href="/testing">
-          <a>
-            <Text variant="h2" as="h3">
-              Title example
-            </Text>
-          </a>
-        </Link>
-        <PostInfo />
-        <Text color="secondary">A small description...</Text>
-      </PostContainer>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </>
   );
 };
