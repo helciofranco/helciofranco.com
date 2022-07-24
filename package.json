@@ -9,11 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mdx-js/loader": "2.1.2",
-    "@next/mdx": "12.2.3",
     "@stitches/react": "1.2.8",
     "framer-motion": "6.5.1",
     "next": "12.2.1",
+    "next-mdx-remote": "4.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remixicon": "2.5.0"
