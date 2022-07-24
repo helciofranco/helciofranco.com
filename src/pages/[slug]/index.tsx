@@ -1,17 +1,20 @@
-import type {
-  GetStaticPaths,
-  GetStaticProps,
-  InferGetStaticPropsType,
-} from 'next';
+import { ReactElement } from 'react';
+import type { Layout } from 'next/app';
+import type { GetStaticPaths, GetStaticProps } from 'next';
 
 import Post from '@blog/screens/Post';
+import ScrollIndicator from '@layouts/ScrollIndicator';
 
 type Params = {
   slug: string;
 };
 
-const Slug = ({ slug }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  return <Post />;
+const Slug: Layout<Params> = ({ slug }) => {
+  return <Post slug={slug} />;
+};
+
+Slug.getLayout = (page: ReactElement) => {
+  return <ScrollIndicator>{page}</ScrollIndicator>;
 };
 
 export const getStaticProps: GetStaticProps<Params> = async ({ params }) => {

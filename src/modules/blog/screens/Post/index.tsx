@@ -9,11 +9,11 @@ import Li from '@components/List/Li';
 import PostContainer from '@blog/components/PostContainer';
 import PostInfo from '@blog/components/PostInfo';
 
-const Post = () => {
+const Post = ({ slug }: { slug: string }) => {
   return (
     <PostContainer>
       <Text variant="h1" as="h1">
-        How I built my blog
+        How I built my blog {slug}
       </Text>
 
       <PostInfo showAuthor />
