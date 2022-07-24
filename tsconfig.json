@@ -17,6 +17,7 @@
     "baseUrl": "./src",
     "paths": {
       "@components/*": ["components/*"],
+      "@configs": ["configs"],
       "@layouts/*": ["layouts/*"],
       "@libs/*": ["libs/*"],
       "@blog/*": ["modules/blog/*"],

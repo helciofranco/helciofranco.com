@@ -1,5 +1,6 @@
 export type Props = {
-  showAuthor?: boolean;
+  slug: string;
+  title: string;
   authorName: string;
   authorImageSrc: string;
   readtime: string;

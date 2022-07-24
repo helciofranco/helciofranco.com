@@ -1,5 +1,6 @@
 export type Props = {
-  showAuthor?: boolean;
+  title: string;
+  compiledSource: string;
   authorName: string;
   authorImageSrc: string;
   readtime: string;

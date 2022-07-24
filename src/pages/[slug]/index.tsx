@@ -1,23 +1,49 @@
+import { promises as fs } from 'fs';
+import path from 'path';
+import { serialize } from 'next-mdx-remote/serialize';
 import { ReactElement } from 'react';
 import Head from 'next/head';
 import type { Layout } from 'next/app';
 import type { GetStaticPaths, GetStaticProps } from 'next';
+import readingTime from 'reading-time';
+
+import { postsDirectory } from '@configs';
 
 import Post from '@blog/screens/Post';
 import ScrollIndicator from '@layouts/ScrollIndicator';
 
-type Params = {
-  title: string;
+type Paths = {
   slug: string;
 };
 
-const Slug: Layout<Params> = ({ title, slug }) => {
+type Params = {
+  seo: {
+    title: string;
+  };
+  post: {
+    title: string;
+    authorName: string;
+    authorImageSrc: string;
+    readtime: string;
+    createdAt: number;
+  };
+  compiledSource: string;
+};
+
+const Slug: Layout<Params> = ({ seo, post, compiledSource }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{seo.title}</title>
       </Head>
-      <Post slug={slug} />
+      <Post
+        title={post.title}
+        compiledSource={compiledSource}
+        authorName={post.authorName}
+        authorImageSrc={post.authorImageSrc}
+        readtime={post.readtime}
+        createdAt={post.createdAt}
+      />
     </>
   );
 };
@@ -27,30 +53,46 @@ Slug.getLayout = (page: ReactElement) => {
 };
 
 export const getStaticProps: GetStaticProps<Params> = async ({ params }) => {
-  // const data = await getPost(params.slug)
-  const { title, slug } = {
-    title: 'result here',
-    slug: 'result here',
-  };
+  const filePath = path.join(postsDirectory, `${params?.slug as string}.mdx`);
+  const fileContents = await fs.readFile(filePath, 'utf8');
+
+  const { compiledSource, frontmatter } = await serialize(fileContents, {
+    parseFrontmatter: true,
+  });
+
+  const postTitle = frontmatter?.title ?? '';
+  const { text: readtime } = readingTime(fileContents);
 
   return {
     props: {
-      title,
-      slug,
+      seo: {
+        title: `${postTitle} - Hélcio Franco`,
+      },
+      post: {
+        title: postTitle,
+        authorName: frontmatter?.authorName ?? '',
+        authorImageSrc: frontmatter?.authorImageSrc ?? '',
+        readtime,
+        createdAt: parseInt(frontmatter?.createdAt ?? '0', 10),
+      },
+      compiledSource,
     },
   };
 };
 
-export const getStaticPaths: GetStaticPaths<Params> = async () => {
-  // const allPosts = await getPosts();
-  // https://nextjs.org/docs/api-reference/data-fetching/get-static-props#reading-files-use-processcwd
+export const getStaticPaths: GetStaticPaths<Paths> = async () => {
+  const filenames = await fs.readdir(postsDirectory);
+
+  const paths = filenames.map((filename) => {
+    return {
+      params: {
+        slug: filename.replace('.mdx', ''),
+      },
+    };
+  });
 
   return {
-    paths: [
-      { params: { title: 'Testing', slug: 'testing' } },
-      { params: { title: 'Testing 2', slug: 'testing-2' } },
-      { params: { title: 'Testing 3', slug: 'testing-3' } },
-    ], // @TODO: Generate from posts.
+    paths,
     fallback: false,
   };
 };

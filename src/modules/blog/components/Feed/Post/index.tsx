@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Link from 'next/link';
 
 import Text from '@components/Text';
@@ -5,14 +6,21 @@ import Text from '@components/Text';
 import PostInfo from '@blog/components/PostInfo';
 
 import { Highlight, PostContainer } from './styles';
-import { useState } from 'react';
+import { Props } from './types';
 
-const Post = () => {
+const Post = ({
+  slug,
+  title,
+  authorName,
+  authorImageSrc,
+  readtime,
+  createdAt,
+}: Props) => {
   const [hovered, setHovered] = useState<boolean>(false);
 
   return (
     <article>
-      <Link href="/testing" passHref>
+      <Link href={slug} passHref>
         <PostContainer
           onHoverStart={() => setHovered(true)}
           onHoverEnd={() => setHovered(false)}
@@ -23,9 +31,15 @@ const Post = () => {
             color="tertiary"
             css={{ fontWeight: '$bold', marginBottom: '$space3' }}
           >
-            Title example
+            {title}
           </Text>
-          <PostInfo />
+
+          <PostInfo
+            authorName={authorName}
+            authorImageSrc={authorImageSrc}
+            readtime={readtime}
+            createdAt={createdAt}
+          />
 
           {hovered && (
             <Highlight
