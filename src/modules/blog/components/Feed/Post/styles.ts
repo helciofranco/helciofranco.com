@@ -8,15 +8,6 @@ export const PostContainer = styled(motion.a, {
   paddingTop: '$space5',
   paddingBottom: '$space5',
 
-  transitionProperty: 'color',
-  transitionTimingFunction: 'cubic-bezier(.4,0,1,1)',
-  transitionDuration: '0.1s',
-
-  color: '$textPrimary',
-  '&:hover': {
-    color: '$textInteractive',
-  },
-
   // Headers
   ['& h3']: {
     fontWeight: '$bold',
@@ -26,8 +17,9 @@ export const PostContainer = styled(motion.a, {
 
 export const Highlight = styled(motion.div, {
   position: 'absolute',
+  zIndex: -1,
 
-  backgroundColor: '$backgroundTertiary',
+  backgroundColor: '$backgroundSecondary',
   borderRadius: '$md',
 
   top: 0,

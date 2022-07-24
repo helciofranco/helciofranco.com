@@ -14,7 +14,7 @@ const Code = styled('code', {
   variants: {
     variant: {
       primary: {
-        color: '$textPrimary',
+        color: '$textSecondary',
         backgroundColor: '$backgroundSecondary',
         border: '1px solid',
         borderColor: '$borderPrimary',

@@ -9,24 +9,24 @@ const Footer = () => {
         target="_blank"
         passHref
       >
-        <Item>Source</Item>
+        <Item>source</Item>
       </Link>
       <Link href="https://github.com/helciofranco" target="_blank" passHref>
-        <Item>Github</Item>
+        <Item>github</Item>
       </Link>
       <Link
         href="https://www.linkedin.com/in/helciofranco/"
         target="_blank"
         passHref
       >
-        <Item>Linkedin</Item>
+        <Item>linkedin</Item>
       </Link>
       <Link
         href="https://www.instagram.com/helciofranco/"
         target="_blank"
         passHref
       >
-        <Item>Instagram</Item>
+        <Item>instagram</Item>
       </Link>
     </Container>
   );

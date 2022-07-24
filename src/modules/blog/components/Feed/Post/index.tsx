@@ -6,7 +6,6 @@ import PostInfo from '@blog/components/PostInfo';
 
 import { Highlight, PostContainer } from './styles';
 import { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
 
 const Post = () => {
   const [hovered, setHovered] = useState<boolean>(false);
@@ -18,23 +17,21 @@ const Post = () => {
         onHoverEnd={() => setHovered(false)}
       >
         <article>
-          <Text variant="h2" as="h3" color="inherit">
+          <Text variant="h2" as="h3" color="primary">
             Title example
           </Text>
           <PostInfo />
-          <Text color="secondary">A small description...</Text>
+          <Text color="tertiary">A small description...</Text>
         </article>
 
-        <AnimatePresence>
-          {hovered && (
-            <Highlight
-              layoutId="feedHighlight"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-            />
-          )}
-        </AnimatePresence>
+        {hovered && (
+          <Highlight
+            layoutId="feedHighlight"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          />
+        )}
       </PostContainer>
     </Link>
   );

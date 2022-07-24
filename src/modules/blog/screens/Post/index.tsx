@@ -16,7 +16,7 @@ const Post = () => {
         How I built my blog
       </Text>
 
-      <PostInfo />
+      <PostInfo showAuthor />
 
       <Text variant="h2" as="h2">
         The stack

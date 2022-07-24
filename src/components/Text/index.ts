@@ -11,6 +11,9 @@ const Text = styled('p', {
       secondary: {
         color: '$textSecondary',
       },
+      tertiary: {
+        color: '$textTertiary',
+      },
       interactive: {
         color: '$textInteractive',
       },

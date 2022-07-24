@@ -25,7 +25,7 @@ const PostInfo = ({ showAuthor = false }: Props) => {
               marginLeft: '$space4',
             }}
           >
-            <Text color="secondary" as="span">
+            <Text color="tertiary" as="span">
               Hélcio Franco
             </Text>
           </Box>
@@ -33,17 +33,17 @@ const PostInfo = ({ showAuthor = false }: Props) => {
       )}
 
       <div>
-        <Text color="secondary" as="time" dateTime="2022-07-12T16:02:33.758Z">
+        <Text color="tertiary" as="time" dateTime="2022-07-12T16:02:33.758Z">
           📌 Jul 14, 2022
         </Text>
         <Text
-          color="secondary"
+          color="tertiary"
           as="span"
           css={{ marginLeft: '$space5', marginRight: '$space5' }}
         >
           •
         </Text>
-        <Text color="secondary" as="span">
+        <Text color="tertiary" as="span">
           ☕ 5 minutes
         </Text>
       </div>

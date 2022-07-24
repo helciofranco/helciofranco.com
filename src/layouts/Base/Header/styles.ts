@@ -22,7 +22,7 @@ export const Anchor = styled('a', {
   fontSize: '$sm',
   fontWeight: '$medium',
 
-  color: '$textSecondary',
+  color: '$textTertiary',
   '&:hover': {
     color: '$textPrimary',
   },
@@ -56,7 +56,7 @@ export const ItemBackground = styled(motion.span, {
   left: 0,
   right: 0,
 
-  backgroundColor: '$backgroundTertiary',
+  backgroundColor: '$backgroundSecondary',
 
   borderRadius: '$sm',
   zIndex: -1,
