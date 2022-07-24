@@ -17,11 +17,15 @@ const Post = () => {
           onHoverStart={() => setHovered(true)}
           onHoverEnd={() => setHovered(false)}
         >
-          <Text variant="h2" as="h3" color="primary">
+          <Text
+            variant="body"
+            as="h3"
+            color="tertiary"
+            css={{ fontWeight: '$bold', marginBottom: '$space3' }}
+          >
             Title example
           </Text>
           <PostInfo />
-          <Text color="tertiary">A small description...</Text>
 
           {hovered && (
             <Highlight

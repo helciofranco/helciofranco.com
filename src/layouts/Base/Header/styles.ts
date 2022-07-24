@@ -19,7 +19,7 @@ export const Anchor = styled('a', {
   transitionTimingFunction: 'cubic-bezier(.4,0,1,1)',
   transitionDuration: '0.1s',
 
-  fontSize: '$sm',
+  fontSize: '$xs',
   fontWeight: '$medium',
 
   color: '$textTertiary',

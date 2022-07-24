@@ -21,7 +21,7 @@ const AboutMe = () => {
           variant="h1"
           as="h1"
           color="primary"
-          css={{ fontWeight: '$bold', marginBottom: '$space2' }}
+          css={{ marginBottom: '$space2' }}
         >
           Hélcio Franco 🇧🇷
         </Text>

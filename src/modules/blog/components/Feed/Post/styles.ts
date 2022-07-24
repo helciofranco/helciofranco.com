@@ -7,12 +7,6 @@ export const PostContainer = styled(motion.a, {
 
   paddingTop: '$space5',
   paddingBottom: '$space5',
-
-  // Headers
-  ['& h3']: {
-    fontWeight: '$bold',
-    marginBottom: '$space3',
-  },
 });
 
 export const Highlight = styled(motion.div, {
