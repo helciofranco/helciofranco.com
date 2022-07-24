@@ -1,8 +1,8 @@
-import type { NextPage } from 'next';
+import type { Layout } from 'next/app';
 
 import Feed from '@blog/screens/Feed';
 
-const Home: NextPage = () => {
+const Home: Layout = () => {
   return <Feed />;
 };
 

@@ -1,8 +1,8 @@
-import type { NextPage } from 'next';
+import type { Layout } from 'next/app';
 
 import Main from '@setup/screens/Main';
 
-const Tools: NextPage = () => {
+const Tools: Layout = () => {
   return <Main />;
 };
 
