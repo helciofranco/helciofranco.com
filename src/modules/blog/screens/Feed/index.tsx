@@ -25,7 +25,7 @@ const Feed = ({ posts }: Props) => {
           authorName={post.authorName}
           authorImageSrc={post.authorImageSrc}
           createdAt={post.createdAt}
-          readTime={post.readTime}
+          readtime={post.readtime}
         />
       ))}
     </>

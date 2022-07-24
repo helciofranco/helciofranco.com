@@ -3,6 +3,6 @@ export type Props = {
   compiledSource: string;
   authorName: string;
   authorImageSrc: string;
-  readTime: number;
+  readtime: number;
   createdAt: number;
 };

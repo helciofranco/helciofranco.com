@@ -43,7 +43,7 @@ const Post = ({
   compiledSource,
   authorName,
   authorImageSrc,
-  readTime,
+  readtime,
   createdAt,
 }: Props) => {
   return (
@@ -56,7 +56,7 @@ const Post = ({
         showAuthor
         authorName={authorName}
         authorImageSrc={authorImageSrc}
-        readTime={readTime}
+        readtime={readtime}
         createdAt={createdAt}
       />
 

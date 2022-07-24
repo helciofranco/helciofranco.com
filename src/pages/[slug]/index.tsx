@@ -23,7 +23,7 @@ type Params = {
     title: string;
     authorName: string;
     authorImageSrc: string;
-    readTime: number;
+    readtime: number;
     createdAt: number;
   };
   compiledSource: string;
@@ -40,7 +40,7 @@ const Slug: Layout<Params> = ({ seo, post, compiledSource }) => {
         compiledSource={compiledSource}
         authorName={post.authorName}
         authorImageSrc={post.authorImageSrc}
-        readTime={post.readTime}
+        readtime={post.readtime}
         createdAt={post.createdAt}
       />
     </>
@@ -70,7 +70,7 @@ export const getStaticProps: GetStaticProps<Params> = async ({ params }) => {
         title: postTitle,
         authorName: frontmatter?.authorName ?? '',
         authorImageSrc: frontmatter?.authorImageSrc ?? '',
-        readTime: parseInt(frontmatter?.readTime ?? '0', 10),
+        readtime: parseInt(frontmatter?.readtime ?? '0', 10),
         createdAt: parseInt(frontmatter?.createdAt ?? '0', 10),
       },
       compiledSource,

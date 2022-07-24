@@ -9,7 +9,7 @@ const PostInfo = ({
   showAuthor = false,
   authorName,
   authorImageSrc,
-  readTime,
+  readtime,
   createdAt,
 }: Props) => {
   return (
@@ -47,7 +47,7 @@ const PostInfo = ({
           •
         </Text>
         <Text color="tertiary" as="span">
-          ☕ {readTime}
+          ☕ {readtime}
         </Text>
       </div>
     </Container>

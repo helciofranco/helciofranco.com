@@ -13,7 +13,7 @@ const Post = ({
   title,
   authorName,
   authorImageSrc,
-  readTime,
+  readtime,
   createdAt,
 }: Props) => {
   const [hovered, setHovered] = useState<boolean>(false);
@@ -37,7 +37,7 @@ const Post = ({
           <PostInfo
             authorName={authorName}
             authorImageSrc={authorImageSrc}
-            readTime={readTime}
+            readtime={readtime}
             createdAt={createdAt}
           />
 
