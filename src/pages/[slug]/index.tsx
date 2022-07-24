@@ -19,17 +19,30 @@ type Params = {
   seo: {
     title: string;
   };
-  title: string;
+  post: {
+    title: string;
+    authorName: string;
+    authorImageSrc: string;
+    readTime: number;
+    createdAt: number;
+  };
   compiledSource: string;
 };
 
-const Slug: Layout<Params> = ({ seo, title, compiledSource }) => {
+const Slug: Layout<Params> = ({ seo, post, compiledSource }) => {
   return (
     <>
       <Head>
         <title>{seo.title}</title>
       </Head>
-      <Post title={title} compiledSource={compiledSource} />
+      <Post
+        title={post.title}
+        compiledSource={compiledSource}
+        authorName={post.authorName}
+        authorImageSrc={post.authorImageSrc}
+        readTime={post.readTime}
+        createdAt={post.createdAt}
+      />
     </>
   );
 };
@@ -53,7 +66,13 @@ export const getStaticProps: GetStaticProps<Params> = async ({ params }) => {
       seo: {
         title: `${postTitle} - Hélcio Franco`,
       },
-      title: postTitle,
+      post: {
+        title: postTitle,
+        authorName: frontmatter?.authorName ?? '',
+        authorImageSrc: frontmatter?.authorImageSrc ?? '',
+        readTime: parseInt(frontmatter?.readTime ?? '0', 10),
+        createdAt: parseInt(frontmatter?.createdAt ?? '0', 10),
+      },
       compiledSource,
     },
   };

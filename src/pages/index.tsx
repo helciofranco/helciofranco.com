@@ -35,6 +35,10 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     return {
       slug: filename.replace('.mdx', ''),
       title: frontmatter?.title ?? '',
+      authorName: frontmatter?.authorName ?? '',
+      authorImageSrc: frontmatter?.authorImageSrc ?? '',
+      readTime: parseInt(frontmatter?.readTime ?? '0', 10),
+      createdAt: parseInt(frontmatter?.createdAt ?? '0', 10),
     };
   });
 

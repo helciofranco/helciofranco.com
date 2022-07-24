@@ -18,7 +18,15 @@ const Feed = ({ posts }: Props) => {
       </Text>
 
       {posts.map((post) => (
-        <Post key={post.slug} slug={post.slug} title={post.title} />
+        <Post
+          key={post.slug}
+          slug={post.slug}
+          title={post.title}
+          authorName={post.authorName}
+          authorImageSrc={post.authorImageSrc}
+          createdAt={post.createdAt}
+          readTime={post.readTime}
+        />
       ))}
     </>
   );

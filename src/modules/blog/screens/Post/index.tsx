@@ -38,14 +38,27 @@ const components: MDXComponents = {
   Card,
 };
 
-const Post = ({ title, compiledSource }: Props) => {
+const Post = ({
+  title,
+  compiledSource,
+  authorName,
+  authorImageSrc,
+  readTime,
+  createdAt,
+}: Props) => {
   return (
     <PostContainer>
       <Text variant="h1" as="h1">
         {title}
       </Text>
 
-      <PostInfo showAuthor />
+      <PostInfo
+        showAuthor
+        authorName={authorName}
+        authorImageSrc={authorImageSrc}
+        readTime={readTime}
+        createdAt={createdAt}
+      />
 
       <MDXRemote compiledSource={compiledSource} components={components} />
     </PostContainer>

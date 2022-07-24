@@ -5,7 +5,13 @@ import Text from '@components/Text';
 import { Container } from './styles';
 import { Props } from './types';
 
-const PostInfo = ({ showAuthor = false }: Props) => {
+const PostInfo = ({
+  showAuthor = false,
+  authorName,
+  authorImageSrc,
+  readTime,
+  createdAt,
+}: Props) => {
   return (
     <Container>
       {showAuthor && (
@@ -15,10 +21,7 @@ const PostInfo = ({ showAuthor = false }: Props) => {
             alignItems: 'center',
           }}
         >
-          <Avatar
-            src="https://avatars.githubusercontent.com/u/7074983?v=4"
-            size="xs"
-          />
+          <Avatar src={authorImageSrc} size="xs" />
 
           <Box
             css={{
@@ -26,7 +29,7 @@ const PostInfo = ({ showAuthor = false }: Props) => {
             }}
           >
             <Text color="tertiary" as="span">
-              Hélcio Franco
+              {authorName}
             </Text>
           </Box>
         </Box>
@@ -34,7 +37,7 @@ const PostInfo = ({ showAuthor = false }: Props) => {
 
       <div>
         <Text color="tertiary" as="time" dateTime="2022-07-12T16:02:33.758Z">
-          📌 Jul 14, 2022
+          📌 {createdAt}
         </Text>
         <Text
           color="tertiary"
@@ -44,7 +47,7 @@ const PostInfo = ({ showAuthor = false }: Props) => {
           •
         </Text>
         <Text color="tertiary" as="span">
-          ☕ 5 minutes
+          ☕ {readTime}
         </Text>
       </div>
     </Container>

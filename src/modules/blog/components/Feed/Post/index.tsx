@@ -8,7 +8,14 @@ import PostInfo from '@blog/components/PostInfo';
 import { Highlight, PostContainer } from './styles';
 import { Props } from './types';
 
-const Post = ({ slug, title }: Props) => {
+const Post = ({
+  slug,
+  title,
+  authorName,
+  authorImageSrc,
+  readTime,
+  createdAt,
+}: Props) => {
   const [hovered, setHovered] = useState<boolean>(false);
 
   return (
@@ -26,7 +33,13 @@ const Post = ({ slug, title }: Props) => {
           >
             {title}
           </Text>
-          <PostInfo />
+
+          <PostInfo
+            authorName={authorName}
+            authorImageSrc={authorImageSrc}
+            readTime={readTime}
+            createdAt={createdAt}
+          />
 
           {hovered && (
             <Highlight
