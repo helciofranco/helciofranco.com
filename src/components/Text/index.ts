@@ -14,6 +14,9 @@ const Text = styled('p', {
       interactive: {
         color: '$textInteractive',
       },
+      inherit: {
+        color: 'inherit',
+      },
     },
     // Font-size
     variant: {
