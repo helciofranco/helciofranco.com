@@ -9,6 +9,9 @@ export const Container = styled('footer', {
 });
 
 export const Item = styled('a', {
+  display: 'flex',
+  alignItems: 'center',
+
   paddingTop: '$space5',
   paddingBottom: '$space5',
 
@@ -20,6 +23,10 @@ export const Item = styled('a', {
   transitionDuration: '0.1s',
 
   color: '$textTertiary',
+
+  i: {
+    marginRight: '$space2',
+  },
 
   '&:hover': {
     color: '$textPrimary',
