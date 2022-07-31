@@ -13,6 +13,7 @@ import PostContainer from '@blog/components/Details/PostContainer';
 import PostInfo from '@blog/components/Details/PostInfo';
 
 import { Props } from './types';
+import Snippet from '@components/Snippet';
 
 const components: MDXComponents = {
   h1: ({ children }) => (
@@ -36,6 +37,7 @@ const components: MDXComponents = {
   li: ({ children }) => <Li>{children}</Li>,
   a: ({ children, href }) => <Link href={href ?? ``}>{children}</Link>,
   Card,
+  Snippet,
 };
 
 const Post = ({

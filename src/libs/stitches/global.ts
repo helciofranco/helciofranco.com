@@ -1,6 +1,9 @@
 import { globalCss } from '.';
 
 const globalStyles = globalCss({
+  '*': {
+    margin: '$none',
+  },
   '*, *::before, *::after': {
     // Change from `box-sizing: content-box` so that `width`
     // is not affected by `padding` or `border`.
